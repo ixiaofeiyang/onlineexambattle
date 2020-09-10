@@ -1,0 +1,17 @@
+.page{
+    position: relative;
+    background: url(http://file.xiaomutong.com.cn/img202006212300.png) no-repeat center top;
+    background-size: 100% auto;
+    padding-top: 120rpx;
+}
+.page .wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.page .r1,.page .r2,.page .r3{
+    padding: 20rpx 0;
+}
+.page .title{
+    font-size: 18px;
+    font-weight: bold;
+}

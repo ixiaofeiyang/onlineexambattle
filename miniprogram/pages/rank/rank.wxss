@@ -1,0 +1,140 @@
+/* miniprogram/pages/home/home.wxss */
+.page{
+    position: relative;
+    background: url(http://file.xiaomutong.com.cn/img202006212300.png) no-repeat center top;
+    background-size: 100% auto; 
+    padding-top: 120rpx;
+}
+.page .footer{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+}
+.page .footer image{
+    z-index: 1;
+}
+
+.page .footer image{
+    z-index: 1;
+}
+
+.page .header{
+    padding: 20rpx 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.page .header .img1{
+    width: 164rpx;
+    height: 109rpx;
+}
+.page .header .img2{
+    width: 375rpx;
+    height: 108rpx;
+}
+
+.page .body{
+    width: 550rpx;
+    margin: 5rpx auto 0;
+    border: 2.5rpx solid #f00;
+    padding-top: 5rpx;
+    height: 800rpx;
+}
+.page .body scroll-view{
+    height: 650rpx;
+}
+
+.page .body .button{
+    position: relative;
+    background: #ddd;
+    border-radius: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* .page .body .button .selected{
+    background: #f00;
+    color: #fff;
+} */
+.page .body .historys{
+    padding: 20rpx 0;
+}
+.page .body .historys .history{
+    width: 100%;
+    padding: 10rpx 0;
+    border-bottom: 2rpx solid #333;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.page .body .historys .history .num{
+    width: 100rpx;
+    text-align: center;
+}
+
+.page .body .historys .history .name{
+    width: 200rpx;
+    text-align: center;
+}
+.page .body .historys .history .score{
+    width: 100rpx;
+    text-align: center;
+}
+.page .body .historys .history .ytimes{
+    width: 150rpx;
+    text-align: center;
+    font-family: Courier;
+}
+
+.page .remarks{
+    width: 550rpx;
+    margin: 50rpx auto 0;
+    padding: 20rpx 0;
+}
+
+.page .sortNo{
+    background-color: #f00;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+
+}
+
+.page .body .button .btn{
+    border-radius: 50rpx;
+    width: 200rpx;
+    padding: 10rpx 20rpx;
+    text-align: center;
+    float: left;
+    line-height: 1.15rem;
+    border: 1rpx solid #f00;
+}
+
+.current{
+    color: #fff;
+}
+.selected{
+    background: red;
+    z-index: 1;
+    border-radius: 17px;
+    cursor: auto;
+    transition: left .1s ease-in-out;
+}
+.daily{
+    left: 0;
+}
+.total{
+    left: 200rpx;
+}

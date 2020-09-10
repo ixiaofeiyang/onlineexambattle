@@ -1,0 +1,11 @@
+/* miniprogram/pages/kefu/kefu.wxss */
+button{
+    background: #fed748;
+    margin: 75rpx auto;
+    border-radius: 16px;
+    width: 375rpx;
+    color: #000;
+    text-align: center;
+    padding: 5px 10px;
+    
+}

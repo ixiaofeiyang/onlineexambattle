@@ -1,0 +1,65 @@
+<view class="page" style="width:{{windowWidth}}px;height:{{windowHeight}}px">
+    <!-- <view class="header">
+        <image src="/images/tit3_3.png" />
+    </view> -->
+
+    <view class="body">
+        <view class="info">
+            <view class="name">
+                <view class="title">输入姓名</view>
+                <view class="input">
+                    <input  bindinput="bindNameInput"/>
+                </view>
+            </view>
+
+
+            <view class="tel">
+                <view class="title">联系电话</view>
+                <view class="input">
+                    <input  bindinput="bindTelInput"/>
+                </view>
+            </view>
+
+
+            <view class="branch">
+                <view class="title">选择部门</view>
+                <view class="select">
+                <picker bindchange="bindRoleChange" value="{{roleindex}}" range="{{roles}}" range-key="name">
+                    <view>{{roles[roleindex]['name']}}</view>
+                </picker>
+                    
+                </view>
+            </view>
+
+            <view class="branch">
+                <view class="title">选择队伍</view>
+                <view class="select">
+                <picker bindchange="bindBranchChange" value="{{index}}" range="{{branches}}" range-key="name">
+                    <view>{{branches[index]['name']}}</view>
+                </picker>
+                    
+                </view>
+            </view>
+
+        </view>
+
+        <view class="btn-area" bindtap="toGo">
+            <view class="button">授权提交</view>
+        </view>
+        
+
+    </view>
+
+    <view class="remarks">
+        <view class="num">
+            1、请认真填写真实信息
+        </view>
+        <view class="num">
+            2、以上信息仅用于统计排名，发放奖品用，不做其他用途
+        </view>
+    </view>
+
+    <view class="footer">
+       
+    </view>
+</view>

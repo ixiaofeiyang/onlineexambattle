@@ -1,0 +1,22 @@
+    <view class="border-radius-10rpx" style="position: relative;background-color: #f6f6f6;margin: 20rpx;min-height: 300rpx;line-height: 250rpx;display: flex;align-items: center;justify-content: center;">
+		<image lazy-load="{{ true }}" mode="widthFix" src="{{ activity.pic }}" style="width: 90%;height: auto;display: block;margin: auto;"></image>
+	</view>
+
+	<view class="font-size-36rpx" style="margin: 20rpx;text-align: left;">
+		<view style="padding: 5rpx 0;" >{{ activity.name }}</view>
+	</view>
+
+	<view style="margin: 20rpx;position: relative;">
+		<text class="background-grey text-align-center border-radius-5rpx font-size-30rpx" style="padding: 15rpx 30rpx;">{{ activity.name }}</text>
+		<text class="font-size-30rpx" style="color: #888;margin-left: 30rpx;">{{ num }}人已签到</text>
+	</view>
+
+	<view class="flex-row-center">
+		<view wx:if="{{!attend}}" class="border-radius-50 background-linear-gradient-bottom participate-btn" style="margin: 60rpx auto 40rpx;" bindtap="doAttendance">
+			<text>签到打卡</text>
+        </view>
+        
+        <view wx:if="{{attend}}"  class="border-radius-50 background-linear-gradient-bottom participate-btn" style="margin: 60rpx auto 40rpx;" bindtap="viewAttendance">
+			<text>查看明细</text>
+		</view>
+	</view>

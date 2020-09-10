@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "mp-icon": "../../components/icon/icon"
+  },
+  "navigationBarTitleText": "搜题助手"
+}

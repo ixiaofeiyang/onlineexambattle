@@ -1,0 +1,46 @@
+<view class="page" style="width:{{windowWidth}}px;height:{{windowHeight}}px">
+
+
+    <view class="body">
+        <view class="button">
+            <view class="{{daily ? 'btn current daily selected' : 'btn'}}" bindtap="dailyGo">
+                今日排行
+            </view>
+            <view class="{{total ? 'btn current total selected' : 'btn'}}" bindtap="totalGo">
+                累计排行
+            </view>
+        </view>
+        <view class="historys">
+            <view class="history">
+                <view class="num">排名</view>
+                <view class="name">姓名</view>
+                <view class="score">分数</view>
+                <view class="ytimes">用时</view>
+            </view>
+            <scroll-view scroll-y="true" style="height: 650rpx;" >
+            <block wx:for="{{historys}}" wx:for-index="idx" wx:for-item="item">
+                <view class="history">
+                    <view class="num">{{idx+1}}</view>
+                    <view class="name">{{item.name}}</view>
+                    <view class="score">{{item.score}}</view>
+                    <view class="ytimes">{{item.ytimes}}</view>
+                </view>
+            </block>
+            </scroll-view>
+            <view class="history" style="background-color: #f00;padding: 10rpx 2rpx;margin:0 auto;">
+                <view class="sortNo">您当前所在排名为第{{sortNo}}名</view>
+            </view>
+        </view>
+
+
+    </view>
+
+    <view class="remarks">
+    备注：今日排行实时更新，累计排行每小时更新一次
+    </view>
+    
+
+    <!-- <view class="footer">
+        <image src="/images/foot2.png" style="width:{{windowWidth}}px;"/>
+    </view> -->
+</view>

@@ -1,0 +1,91 @@
+<wxs src="./../tools.wxs" module="JSON" />
+<view class="page" style="width:{{windowWidth}}px;height:{{windowHeight}}px">
+
+    <view class="body">
+        <view class="image">
+            <view class="typename">
+                <view class="value">{{question.typename}}</view>
+            </view>
+            
+        </view>
+        <view class="message">
+        <view class="sort">{{currentIndex+1}}/{{num}}（共{{num}}题）</view>
+        <view class="time"><text> 倒计时: {{times}}</text></view>
+        </view>
+        <view class="question">
+            <view class="title">{{question.title}}</view>
+
+            <view class="options" wx:if="{{question.typecode == '01' || question.typecode == '02' || question.typecode == '03'}}">
+                <block wx:for="{{question.options}}" wx:for-index="idx" wx:for-item="option">
+                    <!--
+                    未选中
+                    -->
+                    <view wx:if="{{!question.selected && !option.selected}}" class="option" bindtap="selectGo" data-code="{{option.code}}">
+                        <view class="code">{{option.code}}、{{option.content}}</view>
+                    </view>
+                    <!--
+                    选中未提交    
+                    -->
+                    <view wx:if="{{!question.selected && !question.selected && option.selected}}" class="option selected" bindtap="selectGo" data-code="{{option.code}}">
+                        <view class="code">{{option.code}}、{{option.content}}</view>
+                    </view>
+                    <!--
+                    选中已提交、正确 
+                    -->
+                    <view wx:if="{{question.selected && option.value ==1 }}" class="option green" bindtap="selectGo" data-code="{{option.code}}">
+                        <view class="code">{{option.code}}、{{option.content}}</view>
+                    </view>
+                    <!--
+                    选中已提交、错误、已选择
+                    -->
+                    <view wx:if="{{question.selected && option.value !=1  && option.selected}}" class="option red" bindtap="selectGo" data-code="{{option.code}}">
+                        <view class="code">{{option.code}}、{{option.content}}</view>
+                    </view>
+
+                    <!--
+                    选中已提交、错误、未选择 
+                    -->
+                    <view wx:if="{{question.selected && option.value !=1  && !option.selected}}" class="option" bindtap="selectGo" data-code="{{option.code}}">
+                        <view class="code">{{option.code}}、{{option.content}}</view>
+                    </view>
+
+                </block>
+            </view>
+
+            <view class="content" wx:if="{{question.typecode == '04'}}">
+                <view class="" wx:if="{{!question.selected}}">
+                <input class="text" focus placeholder="请输入" bindinput="bindKeyInput" bindblur="bindBlurInput"/>
+                </view>
+
+                <view class="green" wx:if="{{question.selected && question.status}}">
+                <input class="text" value="{{inputValue}}"/>
+                </view>
+
+                <view class="red" wx:if="{{question.selected && !question.status}}">
+                <input class="text" value="{{inputValue}}"/>
+                </view>
+            </view>
+
+        </view>
+
+        <view class="info" wx:if="{{question.selected}}">
+        <view class="message">正确答案：{{question.answer}}</view>
+        </view>
+
+        <view class="btn-area">
+            <view class="button" bindtap="nextGo">确认提交</view>
+        </view>
+    </view>
+
+    <!-- <view class="footer">
+        <image src="/images/foot2.png" style="width:{{windowWidth}}px;"/>
+    </view> -->
+
+    <view class="modal" wx:if="{{showModal}}">
+        <view class="message">您本次得分为：</view>
+        <view class="score">{{score}}</view>
+        <view class="button" bindtap="rankGo">
+            查看排名
+        </view>
+    </view>
+</view>

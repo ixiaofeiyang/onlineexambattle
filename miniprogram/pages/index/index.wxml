@@ -1,0 +1,21 @@
+<view class="page" style="width:{{windowWidth}}px;height:{{windowHeight}}px">
+
+    <view class="body">
+        <!-- <image class="img1" src="/images/img202006212140.png" /> -->
+
+        
+        <view class="p3">
+        知识问答
+        </view>
+        <view class="p4">
+        河科大一附院
+        </view>
+        <view class="button">
+            <view class="btn1" bindtap="helpGo">活动说明</view>
+            <view class="btn2" bindtap="examGo">参与答题</view>
+        </view>
+    </view>
+    <!-- <view class="footer">
+        <image src="/images/foot4.png" style="width:{{windowWidth}}px;"/>
+    </view> -->
+</view>

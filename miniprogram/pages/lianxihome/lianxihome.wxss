@@ -1,0 +1,75 @@
+.page {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+.wrap {
+    width: 80%;
+    height: 520rpx;
+    position: absolute;
+    top: -35%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.wrap>view {
+    padding-bottom: 10px;
+}
+
+.title {
+    font-size: 30rpx;
+    margin-left: 40rpx;
+}
+
+.car {
+    font-size: 30rpx;
+    margin-left: 15rpx;
+    color: #a3a3a3;
+}
+
+.blue {
+    color: #2ea6f2;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 60rpx;
+}
+
+.button view {
+    width: 45%;
+    background: #2ea6f2;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 32rpx;
+    padding-top: 15rpx;
+    padding-bottom: 15rpx;
+    color: #fff;
+}
+
+.button .green {
+    background: #52c023;
+}
+
+button{
+    background-color: #f82809;
+    color: #fff;
+    border-radius: 0px;
+    height: 55px;
+}
+.btn-area{
+    height: 45px;
+    background: #f82809;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 45px;
+    font-size: 16px;
+    color: #fff;
+}

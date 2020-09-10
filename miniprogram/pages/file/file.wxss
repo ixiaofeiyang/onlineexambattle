@@ -1,0 +1,14 @@
+/* miniprogram/pages/file/file.wxss */
+.file{
+    background-color: #fff;
+}
+.btn{
+    background: #fed748;
+    margin: 75rpx auto;
+    border-radius: 16px;
+    width: 375rpx;
+    color: rgb(225, 224, 224);
+    text-align: center;
+    padding: 5px 10px;
+    
+}

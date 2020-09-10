@@ -1,0 +1,124 @@
+/* miniprogram/pages/home/home.wxss */
+.page{
+    position: relative;
+    background-size: 100% auto;
+    background-color: #fef8ea;
+    padding-top: 120rpx;
+}
+.page .footer{
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+}
+.page .footer image{
+    z-index: 1;
+}
+
+.page .header{
+    width: 100%;
+    text-align: center;
+}
+.page .header image{
+    width: 550rpx;
+    height: 180rpx;
+}
+
+.page .body{
+    margin: 20rpx auto;
+    font-size: 0.75rem;
+    color: #f00;
+    width: 675rpx;
+    background: #fff;
+    box-shadow: 0 0 2px #666;
+    padding: 50rpx 0;
+}
+
+
+.page .body .btn-area{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.page .body .btn-area .button{
+    width: 200rpx;
+    height: 75rpx;
+    line-height: 75rpx;
+    vertical-align: middle;
+    background: #f00;
+    box-shadow: 1px 1px 3px #f00;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.page .body .info{
+    padding: 20rpx 0;
+}
+
+.page .body .info .name{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.page .body .info .tel{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.page .body .info .branch{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.page .body .info .title{
+    width: 140rpx;
+    text-align: right;
+    padding-right: 10rpx;    
+ }
+ .page .body .info .input{
+     margin: 10rpx 0;
+     width: 450rpx;
+     height: 50rpx;
+     line-height: 50rpx;
+     border: 1rpx solid #bf1018;
+     padding: 10rpx 15rpx;
+     color: #333;
+     font-size: 14px;
+ }
+
+ .page .body .info .select{
+    margin: 10rpx 0;
+    width: 450rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    border: 1rpx solid #bf1018;
+    padding: 10rpx 15rpx;
+    color: #333;
+    font-size: 14px;
+    background-image:url("http://file.xiaomutong.com.cn/20200725/arraw.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 50rpx;
+
+}
+ .page .remarks{
+     width: 75%;
+     margin: 0 auto;
+ }

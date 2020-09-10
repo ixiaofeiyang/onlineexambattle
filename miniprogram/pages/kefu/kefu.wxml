@@ -1,0 +1,4 @@
+<view class="kefu">
+<button open-type="contact" bindcontact="handleContact">联系客服</button>
+
+</view>

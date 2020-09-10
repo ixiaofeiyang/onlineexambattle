@@ -1,0 +1,15 @@
+<view class="page-history">
+    <view class="title">您参与的考试记录如下</view>
+    <view class="historys">
+        <block wx:for="{{items}}" wx:key="id" wx:for-index="idx" wx:for-item="item">
+            <view class="history" data-id="{{item._id}}" data-state="{{item.state}}" bindtap="quesGo">
+                <view class="sortnum">{{idx+1}}</view>
+                <view class="info">
+                    <view class="name">{{item._id}}-{{item.score}}分</view>
+                    <view class="page">{{item.time1}}</view>
+                </view>
+                <view class="arraw">></view>
+            </view>       
+        </block>
+    </view>
+</view>

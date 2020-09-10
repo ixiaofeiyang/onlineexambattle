@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/activity/activity",
+    "pages/attendance/attendance",
+    "pages/home/home",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/exam/exam",
+    "pages/help/help",
+    "pages/rank/rank",
+    "pages/login/login",
+    "pages/about/about",
+    "pages/me/me",
+    "pages/examhome/examhome",
+    "pages/note/note",
+    "pages/history/history",
+    "pages/kefu/kefu",
+    "pages/file/file",
+    "pages/pdffile/pdffile",
+    "pages/lianxi/lianxi",
+    "pages/find/find",
+    "pages/lianxihome/lianxihome"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "答题活动",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#fed748",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "iconPath": "/icons/home.png",
+        "selectedIconPath": "/icons/home-selected.png",
+        "text": "摸底",
+        "pagePath": "pages/home/home"
+      },
+      {
+        "iconPath": "/icons/note.png",
+        "selectedIconPath": "/icons/note-selected.png",
+        "text": "客服",
+        "pagePath": "pages/kefu/kefu"
+      },
+      {
+        "iconPath": "/icons/me.png",
+        "selectedIconPath": "/icons/me-selected.png",
+        "text": "我的",
+        "pagePath": "pages/me/me"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

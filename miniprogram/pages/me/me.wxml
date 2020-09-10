@@ -1,0 +1,46 @@
+<view class="page-info">
+    <view class="header" bindtap="tapWechat">
+        <view class="avatar">
+            <image class="avatarimage" src="{{userInfo.avatarUrl}}"/>
+        </view>
+        <view class="nickname">{{userInfo.nickName+" "}}</view>
+    </view>
+
+    <!-- <view class="menus">
+        <view class="menu" bindtap="infoGo" >
+            <view class="left">
+            <image class="icon" style="background-color: #fff;" mode="aspectFill" src="http://file.xiaomutong.com.cn/2020080101.png"></image>
+            <text class="title">个人信息</text>
+            </view>
+            <view class="arraw">></view>
+        </view>  
+ 
+         <view class="menu" bindtap="pointsGo" >
+            <view class="left">
+            <image class="icon" style="background-color: #fff;" mode="aspectFill" src="http://file.xiaomutong.com.cn/2020080102.png"></image>
+            <text class="title">我的积分</text>
+            </view>
+            <view class="arraw">></view>
+        </view> 
+
+    </view> -->
+
+    <view class="menus">
+        <view class="menu" bindtap="goShare" >
+            <view class="left">
+            <image class="icon" style="background-color: #fff;" mode="aspectFill" src="http://file.xiaomutong.com.cn/2020080103.png"></image>
+            <button openType="share">分享好友</button>
+            </view>
+            <view class="arraw">></view>
+        </view>  
+                  
+        <view class="menu" bindtap="bindgoabout" >
+            <view class="left">
+            <image class="icon" style="background-color: #fff;" mode="aspectFill" src="http://file.xiaomutong.com.cn/2020080104.png"></image>
+            <text class="title">关于我们</text>
+            </view>
+            <view class="arraw">></view>
+        </view>  
+    </view>
+
+</view>

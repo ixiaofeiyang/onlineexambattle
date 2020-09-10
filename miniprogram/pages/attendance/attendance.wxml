@@ -1,0 +1,13 @@
+<view class="page-home">
+
+    <view class="title">当前签到列表</view>
+    <view class="home">
+        <block wx:for="{{items}}" wx:key="*this" wx:for-index="idx" wx:for-item="exam">
+            <view class="brand" data-id="{{exam._id}}" data-index= "{{exam.index}}" data-file="{{exam.path}}">
+                <view class="sortnum">{{idx+1}}</view>
+                <view class="name">{{exam.userInfo.rolename}}、{{exam.userInfo.name}}</view>
+                <view class="arraw">{{exam.time}}</view>
+            </view>       
+        </block>
+    </view>
+</view>
