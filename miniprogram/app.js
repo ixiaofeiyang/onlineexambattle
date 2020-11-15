@@ -15,10 +15,6 @@ App({
       })
     }
 
-    this.globalData = {
-      userInfo: {
-        role: 0
-      }
-    }
+    this.globalData = {}
   }
 })
